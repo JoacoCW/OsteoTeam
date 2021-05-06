@@ -1,0 +1,148 @@
+/* Import SASS */
+
+@import "colores";
+@import "size";
+
+/* Estilos del proyecto */
+
+html {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.container {
+    font-family: 'Open Sans Condensed';
+}
+
+.container-flex {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.container__flex1 {
+	font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 25px;
+}
+
+.container__1 {
+    padding-top: 80px;
+    text-align: center;
+    font-family: 'Open Sans Condensed';
+    padding-bottom: 15px;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+}
+
+.text-center {
+    font-family: 'Open Sans Condensed';
+}
+
+.formulario__desplegable {
+    padding-bottom: 16px;
+}
+
+/* Navegador */
+
+.nav__modificaciones {
+	position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+/* Fotos redondas */
+
+@mixin foto__redonda($width, $border-radius, $border-style, $border-width, $border-color) {
+    width: $width;
+    border-radius: $border-radius;
+    border-style: $border-style;
+    border-width: $border-width;
+    border-color: $border-color;
+}
+
+.profesional__foto__redonda {
+    @include foto__redonda(150px, 100px, solid, 1px, #000000);
+}
+
+.paciente__foto__redonda {
+    @include foto__redonda(100px, 100px, solid, 1px, #000000);
+}
+
+.deportista__foto__redonda {
+    @include foto__redonda(100px, 100px, solid, 1px, #000000);
+}
+
+/* Redes sociales */
+
+.profesional__redes {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: -1rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    font-size: 1rem;
+    transition: transform 0.3s ease-out;
+    color: $gris;
+}
+
+.btn:hover {
+    transform: translateY(8px);
+}
+
+$redes:(
+    twitter: #69c5cc,
+    facebook: #1c216d,
+    mail: #f04949,
+    instagram: #aa2b75,
+    whatsapp: #6be03c
+);
+
+@each $red, $color in $redes {
+    .btn__#{$red}:hover {
+        color: $color;
+    }
+}
+
+/* owl carousel */
+
+.owl__display {
+    display: flex !important;
+}
+
+/* .owl__img{
+    width: 300px;
+} */
+
+.owl-carousel .item {
+    height: 10rem;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.listaTransportes {
+    padding-top: 20px;
+}
+
+/* Tamaños */ 
+
+@for $i from 1 through 3 {
+    .tamanio__#{$i}{
+        font-size: 18px * $i;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .carousel__display__none {
+        display: none;
+    }
+}
