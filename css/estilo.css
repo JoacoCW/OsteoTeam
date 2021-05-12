@@ -206,3 +206,7 @@ table {
   .carousel__consultorio {
     width: 700px;
     padding-left: 300px; } }
+
+@media only screen and (max-width: 767px) {
+  .mapa {
+    width: 345px; } }
