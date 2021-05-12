@@ -210,3 +210,6 @@ table {
 @media only screen and (max-width: 767px) {
   .mapa {
     width: 345px; } }
+
+.logo__equipo {
+  width: 250px; }
