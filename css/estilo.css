@@ -1,6 +1,5 @@
-@charset "UTF-8";
 /* Import SASS */
-/* Estilos del proyecto */
+/* Project styles */
 html {
   font-family: 'Open Sans Condensed', sans-serif; }
 
@@ -35,13 +34,13 @@ table {
   text-align: center;
   margin-bottom: 3rem; }
 
-/* Navegador */
+/* Nav */
 .nav__modificaciones {
   position: fixed;
   width: 100%;
   z-index: 2; }
 
-/* Fotos redondas */
+/* Round pictures */
 .profesional__foto__redonda {
   width: 150px;
   border-radius: 100px;
@@ -56,7 +55,7 @@ table {
   border-width: 1px;
   border-color: #000000; }
 
-/* Redes sociales */
+/* Social media */
 .profesional__redes {
   display: flex;
   justify-content: center;
@@ -108,7 +107,7 @@ table {
 .listaTransportes {
   padding-top: 20px; }
 
-/* Tamaños */
+/* Sizes */
 .tamanio__1 {
   font-size: 18px; }
 
@@ -122,7 +121,7 @@ table {
   .carousel__display__none {
     display: none; } }
 
-/* Testimonios */
+/* Testimonials */
 .testimonials .testimonial-item {
   box-sizing: content-box;
   text-align: center;
@@ -207,9 +206,23 @@ table {
     width: 700px;
     padding-left: 300px; } }
 
+/* Map */
+.mapa {
+  width: 400px;
+  height: 300px; }
+
 @media only screen and (max-width: 767px) {
   .mapa {
     width: 345px; } }
 
 .logo__equipo {
   width: 250px; }
+
+/* Youtube video */
+.ytvideo {
+  width: 560px;
+  height: 315px; }
+
+@media only screen and (max-width: 767px) {
+  .ytvideo {
+    width: 345px; } }
