@@ -93,9 +93,6 @@ table {
 .owl__display {
   display: flex !important; }
 
-/* .owl__img{
-    width: 300px;
-} */
 .owl-carousel .item {
   height: 10rem;
   width: 10rem;
@@ -125,7 +122,7 @@ table {
 .testimonials .testimonial-item {
   box-sizing: content-box;
   text-align: center;
-  min-height: 320px; }
+  /*min-height: 320px;*/ }
 
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
