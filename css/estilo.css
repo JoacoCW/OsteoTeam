@@ -203,6 +203,9 @@ table {
     width: 700px;
     padding-left: 300px; } }
 
+.padding__bottom {
+  padding-bottom: 160px; }
+
 /* Map */
 .mapa {
   width: 400px;
