@@ -198,11 +198,6 @@ table {
   .testimonials {
     margin: 30px 10px; } }
 
-@media only screen and (min-width: 768px) {
-  .carousel__consultorio {
-    width: 700px;
-    padding-left: 300px; } }
-
 .padding__bottom {
   padding-bottom: 160px; }
 
